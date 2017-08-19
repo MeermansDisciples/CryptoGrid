@@ -50,11 +50,13 @@ def main():
 		currency = requests.get(CRYPTO_API_URL.format(name)).json()
 		print('Grabbing data for {0}'.format(currencyNames[i]))
 		try:
-			currency = currency[0]
-			for x in range(0, len(colTypes)):
-				sheet.update_cell(i + 1, (ord(colTypes[x]) % 65) + 2, currency[infoTypes[x]])
+			if(len(currency) > 0):
+				currency = currency[0]
+				print(currency)
+				for x in range(0, len(colTypes)):
+					sheet.update_cell(i + 1, (ord(colTypes[x]) % 65) + 2, currency[infoTypes[x]])
+				
 			
-			#print(sheet.update_acell(, currency))
 			print('Success for {0}!'.format(currencyNames[i]))
 		except KeyError:
 			print('Skipping {0}'.format(currencyNames[i]))
