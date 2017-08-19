@@ -1,0 +1,8 @@
+{
+	"range": {0},
+	"values": [
+				["{1}",],
+			  ],
+	"majorDimension": "COLUMNS", # Doesn't matter right now, since we are applying a single update at a time
+								 # This value describes how to iterate across values when the defined range is diagonal in nature
+}
