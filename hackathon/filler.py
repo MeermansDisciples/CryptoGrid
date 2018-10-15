@@ -5,7 +5,7 @@ import re
 import gspread
 import json
 from oauth2client.service_account import ServiceAccountCredentials
-
+#Authored by Nathaniel Chong, Brandon Morrell, Stephen Welch, and Justin Williams: c/o BigParser Summer 2017.
 
 SHEET_NAME = 'Common_Crypto_Currencies'
 WORKSHEET_TITLE = 'crypto_currencies'
