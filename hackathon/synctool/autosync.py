@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
+#Authored by Stephen Welch, Nathaniel Chong, Brandon Morrell, and Justin Williams. Long Live Meermans Disciples 2017+.
 driver = webdriver.Chrome()
 driver.get("https://www.bigparser.com/grids")
 assert "BigParser" in driver.title
